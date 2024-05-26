@@ -11,7 +11,6 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private boolean status;
     private String type;
     private String description;
     private String emoji;
@@ -22,14 +21,6 @@ public class Task {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public boolean isStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean status) {
-        this.status = status;
     }
 
     public String getType() {
