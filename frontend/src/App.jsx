@@ -1,10 +1,13 @@
-import Button from "./Button";
+import styles from "./App.module.css"
+import MainTitle from "./components/MainTitle/MainTitle";
+import TaskForm from "./components/TaskForm/TaskForm";
 function App() {
            
   return(
-    <>
-      <Button></Button>
-    </>
+    <div className={styles.container}>
+      <MainTitle></MainTitle>
+      <TaskForm></TaskForm>
+    </div>
   );
 }
 

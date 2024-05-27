@@ -1,0 +1,9 @@
+.textForm{
+    border: none;
+    outline: none;
+    width: 50%;
+    font-family: cursive;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    padding: 0.5rem;
+    box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
+}

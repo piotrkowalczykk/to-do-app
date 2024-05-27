@@ -1,0 +1,9 @@
+.title{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: clamp(2rem, 5vw, 8rem);
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 0;
+}

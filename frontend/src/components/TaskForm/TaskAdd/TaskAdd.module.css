@@ -1,0 +1,15 @@
+.btn{
+    outline: none;
+    background: rgb(8, 145, 8);
+    color: wheat;
+    border: 0;
+    width: 10%;
+    font-family: cursive;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    
+}
+.btn:hover{
+    background: green;
+    cursor: pointer;
+    color: white;
+}
