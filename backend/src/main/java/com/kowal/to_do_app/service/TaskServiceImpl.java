@@ -22,4 +22,11 @@ public class TaskServiceImpl implements TaskService{
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
     }
+
+    @Override
+    public void updateTaskStatus(Long id, Boolean status) {
+        Task task = taskRepository.getOne(id);
+        task.setStatus(status);
+        taskRepository.save(task);
+    }
 }

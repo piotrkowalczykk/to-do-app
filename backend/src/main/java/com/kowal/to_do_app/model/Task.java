@@ -12,8 +12,16 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String type;
+    private boolean status;
     private String description;
-    private String emoji;
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 
     public Long getId() {
         return id;
@@ -37,13 +45,5 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getEmoji() {
-        return emoji;
-    }
-
-    public void setEmoji(String emoji) {
-        this.emoji = emoji;
     }
 }

@@ -7,4 +7,5 @@ import java.util.List;
 public interface TaskService {
     public Task saveTask(Task task);
     public List<Task> getAllTasks();
+    public void updateTaskStatus(Long id, Boolean status);
 }

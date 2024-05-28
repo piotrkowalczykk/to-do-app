@@ -22,7 +22,7 @@ function TaskForm(){
             type: taskType
         };
         
-        fetch("http://127.0.0.1:8080/task", {
+        fetch("http://127.0.0.1:8080/api/task", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(newTask)
