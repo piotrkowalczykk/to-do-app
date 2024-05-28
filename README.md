@@ -9,5 +9,8 @@ A simple, to-do list built with java, spring-boot, mysql and react.
 # Technologies used
 ![Static Badge](https://img.shields.io/badge/Java-ff9100?style=for-the-badge&logo=coffeescript&labelColor=black)
 ![Static Badge](https://img.shields.io/badge/Spring_Boot-%236DB33F?style=for-the-badge&logo=springboot&logoColor=white&labelColor=black)
+![Static Badge](https://img.shields.io/badge/react-%2361DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=black)
+![Static Badge](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white&labelColor=black)
+
 
 
