@@ -6,7 +6,7 @@
     width: 10%;
     font-family: cursive;
     font-size: clamp(0.5rem, 2vw, 1rem);
-    
+    box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
 }
 .btn:hover{
     background: green;

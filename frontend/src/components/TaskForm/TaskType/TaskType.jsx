@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import styles from "./TaskType.module.css";
-import { DropdownIcon } from "../../../ui/icons/dropdown";
 
-function TaskType() {
+function TaskType({ setTaskType, setSelectedOption }) {
     const [dropdownToggled, setDropdownToggled] = useState(false);
-    const [selectedOption, setSelectedOption] = useState('Select type');
+    const [selectedOption, setSelectedOptionLocal] = useState('Select type');
 
     const dropdownOptions = [
         { id: 1, label: "Priority", value: "priority" },
@@ -14,7 +13,8 @@ function TaskType() {
     ];
 
     const handleOptionClick = (label) => {
-        setSelectedOption(label);
+        setSelectedOptionLocal(label);
+        setTaskType(label);
         setDropdownToggled(false);
     };
 
