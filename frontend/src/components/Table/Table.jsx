@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Table.module.css";
+import { BinIcon } from "../../ui/icons/bin";
 
 function Table() {
     const [records, setRecords] = useState([]);
@@ -38,6 +39,26 @@ function Table() {
         });
     };
 
+    const handleDeleteBtn = (id) => {
+        fetch(`http://127.0.0.1:8080/api/tasks/${id}`, {
+            method: 'DELETE'
+        })
+        .then(response => {
+            window.location.reload()
+            if (!response.ok) {
+                console.log('Network response was not ok');
+            } else {
+                const updatedRecords = [...records];
+                updatedRecords.splice(index, 1);
+                setRecords(updatedRecords);
+            }
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    };
+
+
     return (
         <div className={styles.container}>
             <table className={styles.table}>
@@ -46,6 +67,7 @@ function Table() {
                         <th>Status</th>
                         <th>Description</th>
                         <th>Type</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,7 +81,10 @@ function Table() {
                                 />
                             </td>
                             <td>{record.description}</td>
-                            <td>{record.type}</td>
+                            <td className={record.type == "Priority" ? styles.typePriority :
+                             record.type == "Important" ? styles.typeImportant :
+                             record.type == "Secondary" ? styles.typeSecondary : styles.typeDoLater}>{record.type}</td>
+                            <td>{<button className={styles.bin} onClick={() => handleDeleteBtn(record.id, index)}><BinIcon /></button>}</td>
                         </tr>
                     ))}
                 </tbody>
