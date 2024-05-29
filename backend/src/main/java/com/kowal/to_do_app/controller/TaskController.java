@@ -29,4 +29,9 @@ public class TaskController {
     public void updateTaskStatus(@PathVariable Long id, @RequestBody Boolean status) {
         taskService.updateTaskStatus(id, status);
     }
+
+    @DeleteMapping("/tasks/{id}")
+    public void deleteTask(@PathVariable Long id){
+        taskService.deleteTask(id);
+    }
 }
