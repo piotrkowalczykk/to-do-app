@@ -4,7 +4,7 @@ A simple, to-do list built with java, spring-boot, mysql and react.
 ## 📋 Table of Content
 * [Preview](#preview)
 * [General Information](#general-information)
-* [Technologies](#techonologies)
+* [Technologies](#technologies)
 * [Prerequisites](#prerequisites)
 * [How to Run](#how-to-run)
 * [License](#license)
@@ -61,6 +61,11 @@ spring.jpa.show-sql=true
 ./mvnw spring-boot:run
 ```
 The backend should now be running on http://localhost:8080
+
+#### Install dependencies
+```bash
+npm install
+```
 
 #### Run the Development Server
 Change directory to ./frontend
