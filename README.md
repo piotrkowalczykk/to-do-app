@@ -2,13 +2,13 @@
 A simple, to-do list built with java, spring-boot, mysql and react.
 
 ## 📋 Table of Content
-* [Preview](#preview)
-* [General Information](#general-information)
-* [Technologies](#technologies)
-* [Prerequisites](#prerequisites)
-* [How to Run](#how-to-run)
-* [License](#license)
-* [Reports](#reports)
+* [Preview](#-preview)
+* [General Information](#-general-information)
+* [Technologies](#-technologies)
+* [Prerequisites](#-prerequisites)
+* [How to Run](#-how-to-run)
+* [License](#-license)
+* [Reports](#-reports)
 
 ## 🔍 Preview
 ![preview](https://github.com/piotrkowalczykk/to-do-app/assets/104227126/ec9fca55-15bf-49b5-b4fb-a125853c161c)
