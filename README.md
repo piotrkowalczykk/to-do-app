@@ -4,7 +4,7 @@ A simple, to-do list built with java, spring-boot, mysql and react.
 ## 📋 Table of Content
 * [Preview](#preview)
 * [General Information](#general-information)
-* [Technologies](#technologies)
+* [Technologies]([#technologies](https://github.com/piotrkowalczykk/to-do-app?tab=readme-ov-file#-technologies))
 * [Prerequisites](#prerequisites)
 * [How to Run](#how-to-run)
 * [License](#license)
