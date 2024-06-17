@@ -5,7 +5,7 @@ A simple, to-do list built with java, spring-boot, mysql and react.
 * [Preview](#-preview)
 * [General Information](#-general-information)
 * [Technologies](#-technologies)
-* [Prerequisites](#-prerequisites)
+* [Prerequisites](#%EF%B8%8F-prerequisites)
 * [How to Run](#-how-to-run)
 * [License](#-license)
 * [Reports](#-reports)
