@@ -63,12 +63,12 @@ spring.jpa.show-sql=true
 The backend should now be running on http://localhost:8080
 
 #### Install dependencies
+Change directory to ./frontend
 ```bash
 npm install
 ```
 
 #### Run the Development Server
-Change directory to ./frontend
 ```bash
 npm run dev
 ```
